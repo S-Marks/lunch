@@ -14,7 +14,22 @@
  */
 
 function whatToDoForLunch(hungry, availableTime) {
-  console.log("I don't know what to do!");
+  // var hungry = true;
+  // var availableTime = 0;
+
+  if (availableTime <= 20) {
+    console.log("Pick something up and eat it in the lab or the kitchen!");
+  }
+
+  if (availableTime > 20 && availableTime <= 30) {
+    console.log("Try a place nearby!");
+  } else if (availableTime > 30) {
+    console.log("I'm in a bootcamp and I should reconsider.");
+  }
+
+  if (!hungry) {
+    console.log("I should get back to work.")
+  }
 }
 
 
